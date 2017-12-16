@@ -14,7 +14,7 @@ You can try to run it on lower version, it should work.
 
 ### Installing And Running
 
-change `INTERVAL_IN_SECONDS` to 4*60*60 for running the crawler every 4 hours.
+change `INTERVAL_IN_SECONDS` to 14400 for running the crawler every 4 hours.
 
 ```
 docker compose up --build
