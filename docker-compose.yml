@@ -1,0 +1,8 @@
+version: '2'
+services:
+  tor:
+    image: "jgamblin/tor"
+    ports:
+     - "9050:9050"
+  web:
+    build: .

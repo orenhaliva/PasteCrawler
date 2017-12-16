@@ -1,0 +1,6 @@
+requests
+requests[socks]
+lxml
+tinydb
+tinydb_serialization
+schedule

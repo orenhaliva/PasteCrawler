@@ -1,0 +1,16 @@
+FROM python:3.4-slim
+
+WORKDIR /app
+
+EXPOSE 80
+EXPOSE 9050
+
+ADD requirements.txt /app
+
+RUN pip install --trusted-host pypi.python.org -r requirements.txt
+
+RUN pip install -U requests[socks]
+
+ADD . /app
+
+CMD ["python", "main.py"]
